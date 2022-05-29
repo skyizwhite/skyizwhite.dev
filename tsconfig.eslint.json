@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["types/images.d.ts", "**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

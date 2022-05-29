@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": false,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.packageManager": "yarn",
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[graphql]": { "editor.formatOnSave": true },
+  "[javascript]": { "editor.formatOnSave": true },
+  "[javascriptreact]": { "editor.formatOnSave": true },
+  "[json]": { "editor.formatOnSave": true },
+  "[typescript]": { "editor.formatOnSave": true },
+  "[typescriptreact]": { "editor.formatOnSave": true }
+}
