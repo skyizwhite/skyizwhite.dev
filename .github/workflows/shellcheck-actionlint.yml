@@ -1,0 +1,29 @@
+name: ShellCheck/Actionlint
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    paths: [ ".github/workflows/**.yml", "**/*.sh" ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
+
+      - name: Install and Run ShellCheck 👮
+        run: |
+          sudo apt install shellcheck
+          find . -name '*.sh' -exec shellcheck {} +
+
+      - name: Install and Run Actionlint 🐶
+        run: |
+          bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
+          ./actionlint -color

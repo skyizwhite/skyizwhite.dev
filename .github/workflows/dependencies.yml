@@ -1,0 +1,40 @@
+name: Dependencies
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    paths: [ "package.json", "yarn.lock" ]
+
+jobs:
+  check-diff:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
+
+      - name: Check the version of Node.js ⛓
+        id: nodenv
+        run: |
+          echo "::set-output name=version::$(cat .node-version)"
+
+      - name: Set up Node.js 🏗
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ steps.nodenv.outputs.version }}
+
+      - name: Install dependencies 👨🏻‍💻
+        run: yarn install
+
+      - name: Exit with code 1 if differences exist ⚠️
+        run: |
+          output="$(git status --porcelain)"
+          if [ -n "$output" ]; then
+            echo "$output"
+            exit 1
+          fi
