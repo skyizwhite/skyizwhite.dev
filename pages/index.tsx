@@ -1,7 +1,7 @@
-import { NextPage } from "next";
+import type { NextPage } from 'next';
 
 const Home: NextPage = () => (
-  <div className="h-full w-full bg-white flex items-center justify-center">
+  <div className="flex items-center justify-center w-full h-full bg-white">
     <button className="btn ">Hello</button>
   </div>
 );
