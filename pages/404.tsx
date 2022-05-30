@@ -1,5 +1,6 @@
 import { ExclamationIcon } from '@heroicons/react/outline';
 import Head from 'next/head';
+import Link from 'next/link';
 import { Alert, Button } from 'react-daisyui';
 
 import type { NextPage } from 'next';
@@ -16,9 +17,11 @@ const NotFound: NextPage = () => (
       <span className="inline-block">ページは削除または移動された可能性があります。</span>
       <span className="inline-block">リンクが間違っていないかお確かめください。</span>
     </p>
-    <Button color="primary" className="text-base" href="/">
-      トップへ戻る
-    </Button>
+    <Link href="/" passHref>
+      <Button color="primary" className="text-base">
+        トップへ戻る
+      </Button>
+    </Link>
   </div>
 );
 
