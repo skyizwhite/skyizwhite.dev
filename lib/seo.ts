@@ -2,7 +2,6 @@ import pathToUrl from 'utils/pathToUrl';
 
 import type { DefaultSeoProps, NextSeoProps } from 'next-seo';
 
-// eslint-disable-next-line import/prefer-default-export
 export const defaultSeoProps: DefaultSeoProps = {
   openGraph: {
     type: 'website',
