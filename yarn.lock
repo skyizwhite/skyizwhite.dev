@@ -2129,6 +2129,11 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+react-daisyui@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-daisyui/-/react-daisyui-2.0.2.tgz#bbb1c3a7c7ec966722a68568fa3db9c85f06310d"
+  integrity sha512-zpBPUAh5511d142zLAiM6KQRYcHDuKAIXKGdtYb0i6HBpSsHw1Wl68HwvR4/S58g6jpAvFvQn+IcCNrk3irSlg==
+
 react-dom@18.1.0:
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.1.0.tgz#7f6dd84b706408adde05e1df575b3a024d7e8a2f"
