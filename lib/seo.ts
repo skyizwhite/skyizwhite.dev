@@ -7,7 +7,7 @@ export const defaultSeoProps: DefaultSeoProps = {
     type: 'website',
     locale: 'ja_JP',
     url: pathToUrl('/'),
-    site_name: 'skyizwhite',
+    site_name: 'skyizwhite.dev',
     images: [
       {
         url: pathToUrl('/skyizwhite.webp'),
@@ -31,7 +31,7 @@ export const defaultSeoProps: DefaultSeoProps = {
 };
 
 export const HomeSeoProps: NextSeoProps = (() => {
-  const title = 'skyizwhite';
+  const title = 'skyizwhite.dev';
   const description =
     'pakuのポートフォリオサイトです。自己紹介やこれまでの経歴、ブログ等のオリジナルコンテンツを発信しています。';
 
