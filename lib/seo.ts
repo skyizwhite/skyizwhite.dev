@@ -30,7 +30,7 @@ export const defaultSeoProps: DefaultSeoProps = {
   ],
 };
 
-export const TopSeoProps: NextSeoProps = (() => {
+export const HomeSeoProps: NextSeoProps = (() => {
   const title = 'skyizwhite';
   const description =
     'pakuのポートフォリオサイトです。自己紹介やこれまでの経歴、ブログ等のオリジナルコンテンツを発信しています。';
