@@ -10,7 +10,7 @@ export const defaultSeoProps: DefaultSeoProps = {
     site_name: 'skyizwhite.dev',
     images: [
       {
-        url: pathToUrl('/images/og.webp'),
+        url: pathToUrl('/images/ogp.webp'),
         width: 1200,
         height: 630,
         alt: 'skyizwhite',
@@ -31,7 +31,7 @@ export const defaultSeoProps: DefaultSeoProps = {
   additionalMetaTags: [
     {
       property: 'og:image',
-      content: pathToUrl('/images/og-twitter.webp'),
+      content: pathToUrl('/images/ogp-twitter.webp'),
     },
   ],
 };
