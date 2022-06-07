@@ -62,7 +62,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </Container>
       </Navbar>
       <div className="flex-1 mt-16">{children}</div>
-      <div className="py-6 w-100 flex items-center justify-center border-t border-base-300">
+      <div className="py-3 sm:py-6 w-100 flex items-center justify-center text-sm border-t border-base-300">
         <span>Copyright © 2022 skyizwhite</span>
       </div>
     </div>
