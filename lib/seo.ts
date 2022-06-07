@@ -7,12 +7,12 @@ export const defaultSeoProps: DefaultSeoProps = {
     type: 'website',
     locale: 'ja_JP',
     url: pathToUrl('/'),
-    site_name: 'skyizwhite',
+    site_name: 'skyizwhite.dev',
     images: [
       {
-        url: pathToUrl('/skyizwhite.webp'),
-        width: 500,
-        height: 500,
+        url: pathToUrl('/images/ogp.webp'),
+        width: 1200,
+        height: 630,
         alt: 'skyizwhite',
         type: 'image/webp',
       },
@@ -28,10 +28,16 @@ export const defaultSeoProps: DefaultSeoProps = {
       href: pathToUrl('/favicon.ico'),
     },
   ],
+  additionalMetaTags: [
+    {
+      property: 'og:image',
+      content: pathToUrl('/images/ogp-twitter.webp'),
+    },
+  ],
 };
 
-export const TopSeoProps: NextSeoProps = (() => {
-  const title = 'skyizwhite';
+export const HomeSeoProps: NextSeoProps = (() => {
+  const title = 'skyizwhite.dev';
   const description =
     'pakuのポートフォリオサイトです。自己紹介やこれまでの経歴、ブログ等のオリジナルコンテンツを発信しています。';
 
