@@ -23,8 +23,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const router = useRouter();
 
   return (
-    <div className="h-screen flex flex-col">
-      <Navbar className="fixed bg-base-100 border-b border-border-base-300">
+    <div className="h-screen flex flex-col bg-[url('/images/bg-pc.webp')] bg-cover bg-center">
+      <Navbar className="fixed bg-base-100 bg-opacity-80 border-b border-border-base-300">
         <Container>
           <Navbar.Start>
             <NextLink href="/">
@@ -43,7 +43,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <Dropdown.Toggle color="ghost">
                 <MenuIcon className="w-5 h-5" />
               </Dropdown.Toggle>
-              <Dropdown.Menu className="w-52 right-0 bg-white">
+              <Dropdown.Menu className="w-fit right-0 bg-white">
                 {contents.map((content) => (
                   <Dropdown.Item
                     key={content.href}
@@ -62,7 +62,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </Container>
       </Navbar>
       <div className="flex-1 mt-16">{children}</div>
-      <div className="py-3 sm:py-6 w-100 flex items-center justify-center text-sm border-t border-base-300">
+      <div className="py-3 sm:py-6 w-100 flex items-center justify-center text-sm bg-base-100 bg-opacity-80 border-t border-base-300">
         <span>Copyright © 2022 skyizwhite</span>
       </div>
     </div>
