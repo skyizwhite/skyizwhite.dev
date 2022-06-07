@@ -3,9 +3,7 @@ import { useRouter } from 'next/router';
 import { Dropdown, Navbar } from 'react-daisyui';
 
 import Container from 'components/Container';
-import NextImage from 'components/NextImage';
 import NextLink from 'components/NextLink';
-import logo from 'public/images/logo.webp';
 
 import type { ReactNode } from 'react';
 
@@ -30,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Container>
           <Navbar.Start>
             <NextLink href="/">
-              <NextImage src={logo} alt="skyizwhite" />
+              <span className="text-lg font-extrabold">skyizwhite</span>
             </NextLink>
           </Navbar.Start>
           <Navbar.End className="px-2 mx-2 hidden sm:flex">
