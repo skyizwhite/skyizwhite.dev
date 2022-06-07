@@ -10,9 +10,9 @@ export const defaultSeoProps: DefaultSeoProps = {
     site_name: 'skyizwhite.dev',
     images: [
       {
-        url: pathToUrl('/skyizwhite.webp'),
-        width: 500,
-        height: 500,
+        url: pathToUrl('/images/og.webp'),
+        width: 1200,
+        height: 630,
         alt: 'skyizwhite',
         type: 'image/webp',
       },
@@ -26,6 +26,12 @@ export const defaultSeoProps: DefaultSeoProps = {
     {
       rel: 'icon',
       href: pathToUrl('/favicon.ico'),
+    },
+  ],
+  additionalMetaTags: [
+    {
+      property: 'og:image',
+      content: pathToUrl('/images/og-twitter.webp'),
     },
   ],
 };
