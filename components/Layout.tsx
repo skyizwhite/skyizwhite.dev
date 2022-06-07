@@ -24,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="h-screen flex flex-col bg-[url('/images/bg-pc.webp')] bg-cover bg-center">
-      <Navbar className="fixed bg-base-100 bg-opacity-80 border-b border-border-base-300">
+      <Navbar className="fixed bg-base-100 bg-opacity-70 border-b border-border-base-300">
         <Container>
           <Navbar.Start>
             <NextLink href="/">
@@ -62,7 +62,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </Container>
       </Navbar>
       <div className="flex-1 mt-16">{children}</div>
-      <div className="py-3 sm:py-6 w-100 flex items-center justify-center text-sm bg-base-100 bg-opacity-80 border-t border-base-300">
+      <div className="py-3 sm:py-6 w-100 flex items-center justify-center text-sm bg-base-100 bg-opacity-70 border-t border-base-300">
         <span>Copyright © 2022 skyizwhite</span>
       </div>
     </div>
