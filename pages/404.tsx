@@ -3,6 +3,7 @@ import { NextSeo } from 'next-seo';
 import { Alert, Button } from 'react-daisyui';
 
 import Container from 'components/Container';
+import ContentBox from 'components/ContentBox';
 import NextLink from 'components/NextLink';
 
 import type { NextPage } from 'next';
@@ -10,7 +11,7 @@ import type { NextPage } from 'next';
 const NotFound: NextPage = () => (
   <Container className="h-full flex flex-col items-center justify-center">
     <NextSeo title="404 Page Not Found" />
-    <div className="bg-base-100 bg-opacity-80 p-3 sm:p-5 rounded-xl flex flex-col items-center justify-center">
+    <ContentBox className="flex flex-col items-center justify-center">
       <Alert icon={<ExclamationIcon className="h-6 md:h-8 w-6 md:w-8" />} status="error" className="w-min shadow-lg">
         <span className="text-lg md:text-2xl font-bold whitespace-nowrap">404 Page Not Found</span>
       </Alert>
@@ -23,7 +24,7 @@ const NotFound: NextPage = () => (
           トップへ戻る
         </Button>
       </NextLink>
-    </div>
+    </ContentBox>
   </Container>
 );
 

@@ -7,7 +7,7 @@ export const defaultSeoProps: DefaultSeoProps = {
     type: 'website',
     locale: 'ja_JP',
     url: pathToUrl('/'),
-    site_name: 'skyizwhite.dev',
+    site_name: 'skyizwhite',
     images: [
       {
         url: pathToUrl('/images/ogp.webp'),
@@ -36,14 +36,20 @@ export const defaultSeoProps: DefaultSeoProps = {
   ],
 };
 
-export const HomeSeoProps: NextSeoProps = (() => {
-  const title = 'skyizwhite.dev';
-  const description =
-    'pakuのポートフォリオサイトです。自己紹介やこれまでの経歴、ブログ等のオリジナルコンテンツを発信しています。';
+export const TopSeoProps: NextSeoProps = (() => {
+  const title = 'skyizwhite';
+  const description = 'pakuのポートフォリオサイトです。自己紹介や成果物、ブログ等のオリジナルコンテンツを発信しています。';
 
   return {
     title,
     description,
     openGraph: { title, description, url: pathToUrl('/') },
   };
+})();
+
+export const AboutSeoProps: NextSeoProps = (() => {
+  const title = 'About - skyizwhite';
+  const description = 'pakuの自己紹介ページです。経歴や資格、スキルなどを公開しています。';
+
+  return { title, description, openGraph: { title, description, url: pathToUrl('/about') } };
 })();
