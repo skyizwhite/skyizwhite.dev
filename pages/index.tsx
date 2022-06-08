@@ -2,13 +2,13 @@ import { motion } from 'framer-motion';
 import { NextSeo } from 'next-seo';
 
 import Container from 'components/Container';
-import { HomeSeoProps } from 'lib/seo';
+import { TopSeoProps } from 'lib/seo';
 
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => (
+const Top: NextPage = () => (
   <Container className="h-full flex flex-col items-center justify-center">
-    <NextSeo {...HomeSeoProps} />
+    <NextSeo {...TopSeoProps} />
     <h1 className="text-5xl md:text-8xl text-primary-100 font-extrabold tracking-wide">
       <motion.span
         initial={{ y: 50, opacity: 0 }}
@@ -30,4 +30,4 @@ const Home: NextPage = () => (
   </Container>
 );
 
-export default Home;
+export default Top;

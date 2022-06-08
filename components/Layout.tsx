@@ -20,10 +20,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const router = useRouter();
 
   return (
-    <div className="h-screen flex flex-col bg-[url('/images/bg.webp')] bg-cover bg-center">
-      <Navbar className="fixed bg-base-100 bg-opacity-70 border-b border-border-base-300">
+    <div className="h-full flex flex-col">
+      <Navbar className="fixed bg-base-100 bg-opacity-70 border-b border-border-base-300 z-50">
         <Container>
-          <Navbar.Start>
+          <Navbar.Start className="ml-2">
             <NextLink href="/">
               <span className="text-lg font-extrabold">skyizwhite</span>
             </NextLink>
