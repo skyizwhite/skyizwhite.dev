@@ -91,7 +91,7 @@ const About: NextPage = () => (
           <li>HTML/CSS (Sass, Bootstrap, Tailwind CSS, daisyUI)</li>
           <li>JavaScript, TypeScript (React, Vue, Next.js, Nuxt.js)</li>
           <li>Ruby (Sinatra, Rails)</li>
-          <li>Python (Flask, Keras, Kivy)</li>
+          <li>Python (Flask, Keras)</li>
           <li>Common Lisp (learning)</li>
           <li>Web design (learning)</li>
         </ol>
