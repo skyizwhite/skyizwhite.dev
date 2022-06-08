@@ -51,19 +51,5 @@ export const AboutSeoProps: NextSeoProps = (() => {
   const title = 'About - skyizwhite';
   const description = 'pakuの自己紹介ページです。経歴や資格、スキルなどを公開しています。';
 
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      url: pathToUrl('/about'),
-      additionalMetaTags: [
-        {
-          property: 'og:image',
-          content: pathToUrl('/images/me.webp'),
-        },
-      ],
-    },
-  };
+  return { title, description, openGraph: { title, description, url: pathToUrl('/about') } };
 })();
