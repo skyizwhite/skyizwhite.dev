@@ -13,10 +13,7 @@ export type LayoutProps = {
 
 const contents = [
   { href: '/about', title: 'about' },
-  { href: '/skills', title: 'skills' },
-  { href: '/works', title: 'works' },
-  { href: '/blog', title: 'blog' },
-  { href: '/contact', title: 'contact' },
+  // { href: '/blog', title: 'blog' },
 ];
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -31,14 +28,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <span className="text-lg font-extrabold">skyizwhite</span>
             </NextLink>
           </Navbar.Start>
-          <Navbar.End className="px-2 mx-2 hidden sm:flex">
+          <Navbar.End className="hidden sm:flex px-2 mx-2">
             {contents.map((content) => (
               <NextLink key={content.href} href={content.href} className="mx-4 hover:text-primary">
                 {content.title}
               </NextLink>
             ))}
           </Navbar.End>
-          <Navbar.End className="flex sm:hidden ">
+          <Navbar.End className="flex sm:hidden">
             <Dropdown horizontal="center">
               <Dropdown.Toggle color="ghost">
                 <MenuIcon className="w-5 h-5" />
