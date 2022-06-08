@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const router = useRouter();
 
   return (
-    <div className="h-screen flex flex-col bg-[url('/images/bg-pc.webp')] bg-cover bg-center">
+    <div className="h-screen flex flex-col bg-[url('/images/bg.webp')] bg-cover bg-center">
       <Navbar className="fixed bg-base-100 bg-opacity-70 border-b border-border-base-300">
         <Container>
           <Navbar.Start>
