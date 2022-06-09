@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const router = useRouter();
 
   return (
-    <div className="h-full w-full flex flex-col bg-[url('/images/bg.webp')] bg-cover bg-center fixed overflow-scroll">
+    <div className="h-full flex flex-col">
       <Navbar className="fixed bg-base-100 bg-opacity-70 border-b border-border-base-300 z-50">
         <Container>
           <Navbar.Start className="ml-2">
