@@ -1,10 +1,10 @@
 import { ExclamationIcon } from '@heroicons/react/outline';
 import { NextSeo } from 'next-seo';
+import Link from 'next/link';
 import { Alert, Button } from 'react-daisyui';
 
 import Container from 'components/Container';
 import ContentBox from 'components/ContentBox';
-import NextLink from 'components/NextLink';
 
 import type { NextPage } from 'next';
 
@@ -19,11 +19,11 @@ const NotFound: NextPage = () => (
         <span className="block">ページは削除または移動された可能性があります。</span>
         <span className="block">リンクが間違っていないかお確かめください。</span>
       </p>
-      <NextLink href="/">
+      <Link href="/" passHref>
         <Button color="primary" className="text-xs sm:text-sm md:text-base shadow-lg">
           トップへ戻る
         </Button>
-      </NextLink>
+      </Link>
     </ContentBox>
   </Container>
 );

@@ -115,6 +115,7 @@ module.exports = {
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": "error",
     curly: ["error", "all"],
+    "jsx-a11y/anchor-is-valid": "off",
   },
   overrides: [
     {

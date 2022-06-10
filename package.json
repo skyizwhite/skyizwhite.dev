@@ -25,6 +25,7 @@
     "framer-motion": "^6.3.10",
     "next": "12.1.6",
     "next-seo": "^5.4.0",
+    "nextjs-progressbar": "^0.0.14",
     "react": "18.1.0",
     "react-daisyui": "^2.0.2",
     "react-div-100vh": "^0.7.0",

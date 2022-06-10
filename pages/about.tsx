@@ -1,6 +1,7 @@
 import { AcademicCapIcon, BadgeCheckIcon, BriefcaseIcon, IdentificationIcon, ThumbUpIcon } from '@heroicons/react/outline';
 import { NextSeo } from 'next-seo';
-import { Breadcrumbs, Link } from 'react-daisyui';
+import Link from 'next/link';
+import { Breadcrumbs } from 'react-daisyui';
 
 import Container from 'components/Container';
 import ContentBox from 'components/ContentBox';
@@ -14,8 +15,10 @@ const About: NextPage = () => (
   <Container className="p-4">
     <NextSeo {...AboutSeoProps} />
     <Breadcrumbs className="mb-2 sm:mb-4">
-      <Breadcrumbs.Item href="/">top</Breadcrumbs.Item>
-      <Breadcrumbs.Item href="/about">about</Breadcrumbs.Item>
+      <Link href="/" passHref>
+        <Breadcrumbs.Item>top</Breadcrumbs.Item>
+      </Link>
+      <Breadcrumbs.Item>about</Breadcrumbs.Item>
     </Breadcrumbs>
     <h1 className="my-2 sm:my-4 text-3xl sm:text-5xl font-bold">About</h1>
     <div className="p-4 sm:p-8 flex items-center justify-center">
@@ -33,15 +36,15 @@ const About: NextPage = () => (
           <li>ラーメンとサブカルチャーを愛するオタクです</li>
           <li>
             Twitter:{' '}
-            <Link href="https://twitter.com/skyizwhite" color="primary">
+            <a className="link link-primary" href="https://twitter.com/skyizwhite">
               @skyizwhite
-            </Link>
+            </a>
           </li>
           <li>
             GitHub:{' '}
-            <Link href="https://github.com/skyizwhite" color="primary">
+            <a className="link link-primary" href="https://github.com/skyizwhite">
               @skyizwhite
-            </Link>
+            </a>
           </li>
         </ol>
       </ContentBox>
