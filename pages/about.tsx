@@ -43,12 +43,6 @@ const About: NextPage = () => (
               @skyizwhite
             </Link>
           </li>
-          <li>
-            SoundCloud:{' '}
-            <Link href="https://soundcloud.com/skyizwhite" color="primary">
-              @skyizwhite
-            </Link>
-          </li>
         </ol>
       </ContentBox>
       <ContentBox className="shadow">
@@ -97,8 +91,6 @@ const About: NextPage = () => (
           <li>HTML/CSS (Sass, Bootstrap, Tailwind CSS, daisyUI)</li>
           <li>JavaScript/TypeScript (React, Recoil, Next.js, Vue, Nuxt.js)</li>
           <li>Common Lisp</li>
-          <li>UI design (Sketch, Pixelmator Pro)</li>
-          <li>DTM (Logic Pro)</li>
         </ol>
       </ContentBox>
     </div>
