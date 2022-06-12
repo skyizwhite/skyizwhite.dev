@@ -39,9 +39,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
             <Dropdown.Menu className="w-fit right-0 bg-white">
               {contents.map((content) => (
                 <Link key={content.href} href={content.href} passHref>
-                  <div>
-                    <Dropdown.Item>{content.title}</Dropdown.Item>
-                  </div>
+                  <Dropdown.Item>{content.title}</Dropdown.Item>
                 </Link>
               ))}
             </Dropdown.Menu>
