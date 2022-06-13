@@ -35,12 +35,6 @@ const About: NextPage = () => (
           <li>茨城出身・在住</li>
           <li>ラーメンとサブカルチャーを愛するオタクです</li>
           <li>
-            Twitter:{' '}
-            <a className="link link-primary" href="https://twitter.com/skyizwhite">
-              @skyizwhite
-            </a>
-          </li>
-          <li>
             GitHub:{' '}
             <a className="link link-primary" href="https://github.com/skyizwhite">
               @skyizwhite

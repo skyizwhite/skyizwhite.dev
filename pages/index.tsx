@@ -13,7 +13,7 @@ const Top: NextPage = () => (
       <motion.span
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
         className="block"
       >
         Hi there,
@@ -21,7 +21,7 @@ const Top: NextPage = () => (
       <motion.span
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
+        transition={{ delay: 1.2, duration: 0.5 }}
         className="block"
       >
         I&apos;m paku.
